@@ -3,16 +3,22 @@ const fetch = require('node-fetch');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+
+
+app.use(cors({
+  origin: '*',
+  methods: ['GET']
+}));
 
 app.get('/quotes', async (req, res) => {
   try {
     const page = req.query.page || 1;
 
-    const response = await fetch(
-      `https://api.freeapi.app/api/v1/public/quotes?page=${page}&limit=20&query=human`,
-      { method: 'GET', headers: { accept: 'application/json' } }
-    );
+
+const response = await fetch(
+  `https://api.freeapi.app/api/v1/public/quotes?page=${page}&limit=20`,
+  { method: 'GET', headers: { accept: 'application/json' } }
+);
 
     const data = await response.json();
     res.json(data);

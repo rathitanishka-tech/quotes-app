@@ -3,14 +3,17 @@
 A clean, minimal quote gallery + generator-style web app that fetches quotes from a public API and displays **2 random quotes at a time**. Each click refreshes the content to keep the experience fresh and focused.
 
 ---
+## Live Link
+https://quotes-app-freeapi.netlify.app
+
 
 ## 🚀 Features
 
-* 🔄 Fetch quotes from API using Node.js backend
-* 🎯 Displays only **2 random quotes per refresh**
-* 🔀 Shuffle + random pagination for better variety
-* 🌙 Dark premium UI
-* 📱 Responsive layout
+*  Fetch quotes from API using Node.js backend
+*  Displays only **2 random quotes per refresh**
+*  Shuffle + random pagination for better variety
+*  Dark premium UI
+*  Responsive layout
 
 ---
 
@@ -79,7 +82,7 @@ https://api.freeapi.app/api/v1/public/quotes
 * Update API URL in `script.js`:
 
 ```
-const API_BASE = 'https://your-backend-url.onrender.com/quotes';
+const API_BASE = 'https://quotes-app-wdfh.onrender.com/quotes';
 ```
 
 ---
