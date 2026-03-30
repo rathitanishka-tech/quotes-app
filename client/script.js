@@ -1,7 +1,7 @@
 const container = document.getElementById('quotesContainer');
 const refreshBtn = document.getElementById('refreshBtn');
 
-const API_BASE = 'http://localhost:3000/quotes';
+const API_BASE = 'https://quotes-app-wdfh.onrender.com';
 
 async function fetchQuotes() {
   container.innerHTML = `<p>Loading...</p>`;
